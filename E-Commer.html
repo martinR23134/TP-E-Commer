@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="E-Commer.css">
+    <script src="https://kit.fontawesome.com/0cd4d38be2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navegacion">
+            <div class="open-menu">
+                <a href="" class="btn-close" onclick="OpenSlideMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+            
+            <div class="logo">
+                <a href="pruba.html">
+                    <img src="logo.png" alt="" class="logo">
+                </a>
+            </div>
+            <div class="buscador">
+                <input type="text" placeholder="Buscar...">
+                <button class="boton-buscador"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <ul class="login">
+                <li>
+                    <a  href="">
+                       <i class="fa-solid fa-location-dot"></i>
+                    </a>
+                    <span>Tiendas</span>
+                </li>
+                <li><button class="boton-blanco">Ingresar</button></li>
+                <li><button class="boton-negro">Registrarse</button></li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                    <span>Carrito</span>
+                </li>
+            </ul>
+        </div>
+        </nav>
+     
+        
+        <div id="side-menu" class="menu-slide">
+            <a href="" class="btn-close" onclick="CloseSlideMenu()"></a>
+            <a href="">Productos</a>
+            <a href="">Productos</a>
+            <a href="">Productos</a>
+            <a href="">Productos</a>
+        </div>
+
+<script>
+
+    function OpenSlideMenu(){
+        document.getElementById('side-menu').style.width ='250px';
+        document.getElementById('main').style.marginleft ='250px';
+    }
+
+    function CloseSlideMenu(){
+        document.getElementById('side-menu').style.width ='0';
+        document.getElementById('main').style.marginleft ='0';
+    }
+    
+</script>
+
+<nav class="botones-abajo">
+    
+    <div class="abajo">
+        <a href=""><button class="boton-negro">Ingresar</button></a>
+        <a href=""><button class="boton-negro">Ingresar</button></a>
+        <a href=""><button class="boton-negro">Ingresar</button></a>
+        <a href=""><button class="boton-negro">Ingresar</button></a>
+        <a href=""><button class="boton-negro">Ingresar</button></a>
+    </div>
+
+
+</nav>
+
+
+</body>
+</html>
+
+
+
